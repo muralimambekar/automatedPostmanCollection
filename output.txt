@@ -1,0 +1,108 @@
+newman
+
+Lets shop
+
+→ login
+  POST https://rahulshettyacademy.com/api/ecom/auth/login [200 OK, 1.26kB, 249ms]
+  √  Status code is 200
+  ┌
+  │ 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Nzdi
+  │ Yzk4OGUyYjU0NDNiMWYxNTgzNWQiLCJ1c2VyRW1haWwiOiJhcGl0ZX
+  │ N0aW5nQG1haWxpbmF0b3IuY29tIiwidXNlck1vYmlsZSI6OTEyMzQx
+  │ MjM0MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTczOTIxMj
+  │ Y5NiwiZXhwIjoxNzcwNzcwMjk2fQ.7Ui3rvR5y471Vl8XZV1srx1E6
+  │ aInM1q93ILEhkB2o8o'
+  └
+
+→ addProduct
+  POST https://rahulshettyacademy.com/api/ecom/product/add-product [201 Created, 971B, 67ms]
+  √  Status code is 201
+  √  Validate product added message
+
+→ createOrder
+  POST https://rahulshettyacademy.com/api/ecom/order/create-order [201 Created, 1.02kB, 33ms]
+  √  Status code is 201
+  √  Order success message
+
+→ getOrderDetails
+  GET https://rahulshettyacademy.com/api/ecom/order/get-orders-details?id=67aa4799c019fb1ad6f20c52 [200 OK, 1.32kB, 18ms]
+  √  Status code is 200
+  √  Verify order fetched successful
+
+→ deleteProduct
+  DELETE https://rahulshettyacademy.com/api/ecom/product/delete-product/67aa4799c019fb1ad6f20c4c [200 OK, 929B, 24ms]
+  √  Verify product deleted msg successful
+
+┌─────────────────────────┬───────────────────┬───────────────────┐
+│                         │          executed │            failed │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│              iterations │                 1 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│                requests │                 5 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│            test-scripts │                10 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│      prerequest-scripts │                 5 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│              assertions │                 8 │                 0 │
+├─────────────────────────┴───────────────────┴───────────────────┤
+│ total run duration: 969ms                                       │
+├─────────────────────────────────────────────────────────────────┤
+│ total data received: 1.04kB (approx)                            │
+├─────────────────────────────────────────────────────────────────┤
+│ average response time: 78ms [min: 18ms, max: 249ms, s.d.: 87ms] │
+└─────────────────────────────────────────────────────────────────┘
+newman
+
+Lets shop
+
+→ login
+  POST https://rahulshettyacademy.com/api/ecom/auth/login [200 OK, 1.26kB, 247ms]
+  √  Status code is 200
+  ┌
+  │ 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Nzdi
+  │ Yzk4OGUyYjU0NDNiMWYxNTgzNWQiLCJ1c2VyRW1haWwiOiJhcGl0ZX
+  │ N0aW5nQG1haWxpbmF0b3IuY29tIiwidXNlck1vYmlsZSI6OTEyMzQx
+  │ MjM0MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTczOTIxMj
+  │ cxNSwiZXhwIjoxNzcwNzcwMzE1fQ.U58XHX2eXhkYnyNtfSyqyy8CW
+  │ ildRkLOMcW5WwE0tN4'
+  └
+
+→ addProduct
+  POST https://rahulshettyacademy.com/api/ecom/product/add-product [201 Created, 971B, 66ms]
+  √  Status code is 201
+  √  Validate product added message
+
+→ createOrder
+  POST https://rahulshettyacademy.com/api/ecom/order/create-order [201 Created, 1.02kB, 31ms]
+  √  Status code is 201
+  √  Order success message
+
+→ getOrderDetails
+  GET https://rahulshettyacademy.com/api/ecom/order/get-orders-details?id=67aa47acc019fb1ad6f20c71 [200 OK, 1.32kB, 16ms]
+  √  Status code is 200
+  √  Verify order fetched successful
+
+→ deleteProduct
+  DELETE https://rahulshettyacademy.com/api/ecom/product/delete-product/67aa47acc019fb1ad6f20c64 [200 OK, 929B, 25ms]
+  √  Verify product deleted msg successful
+
+┌─────────────────────────┬───────────────────┬───────────────────┐
+│                         │          executed │            failed │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│              iterations │                 1 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│                requests │                 5 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│            test-scripts │                10 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│      prerequest-scripts │                 5 │                 0 │
+├─────────────────────────┼───────────────────┼───────────────────┤
+│              assertions │                 8 │                 0 │
+├─────────────────────────┴───────────────────┴───────────────────┤
+│ total run duration: 912ms                                       │
+├─────────────────────────────────────────────────────────────────┤
+│ total data received: 1.04kB (approx)                            │
+├─────────────────────────────────────────────────────────────────┤
+│ average response time: 77ms [min: 16ms, max: 247ms, s.d.: 86ms] │
+└─────────────────────────────────────────────────────────────────┘
